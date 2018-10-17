@@ -5,6 +5,7 @@ import {
     Navbar, NavItem, Select,
     SelectOption, Card, Table,
     TableRow, Footer, FooterBottom,
+    Modal,
 } from '../src/lib/atomix';
 
 export default props => {
@@ -20,23 +21,43 @@ export default props => {
 
             <div className='container'>
 
+                <div className='container'>
+
+                    <Modal
+                        name='firstModal'
+                        text='Botão da Modal'
+                        style='primary'
+                        title='Titulo'
+                        content='Olá, eu sou uma modal linda pra caramba =D'
+                    />
+
+                    <Modal
+                        name='secondaModal'
+                        text='Botão da Modal 2'
+                        style='primary'
+                        title='Titulo'
+                        content='Mensagem da modal'
+                    />
+                </div>
+
                 <div className='vertical-content'>
                     <Input
                         type='password'
-                        style='primary'
                         placeholder='Placeholder'
                         value='Value'
                     />
 
                     <Input
                         type='number'
-                        style='primary'
                         placeholder='Placeholder'
                         value='Value'
                     />
                 </div>
 
                 <Button style='primary' onClick={() => alert('Botão acionado com sucesso')} text='Teste' />
+                <Button style='primary' onClick={() => alert('Botão acionado com sucesso')} text='Teste' />
+                <Button style='warning' onClick={() => alert('Botão acionado com sucesso')} text='Teste' />
+                <Button onClick={() => alert('Botão acionado com sucesso')} text='Teste' />
 
                 <div>
                     <Textarea

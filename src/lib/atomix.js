@@ -5,6 +5,7 @@ import './styles/input.css';
 import './styles/card.css';
 import './styles/table.css';
 import './styles/footer.css';
+import './styles/modal.css';
 
 import React, { Fragment } from 'react';
 
@@ -47,7 +48,7 @@ export function Navbar(props) {
             <a className='navbar-brand'>
                 {props.brand}
             </a>
-            <div className="navbar-right">
+            <div className="navbar-content">
                 {props.children}
             </div>
         </div>
@@ -78,7 +79,7 @@ export function Select(props) {
 
 export function SelectOption(props) {
     return (
-        <option value={props.value}> {props.text}</option>
+        <option key={Math.random()} value={props.value}> {props.text}</option>
     )
 }
 
@@ -108,12 +109,17 @@ export function Card(props) {
 export function Table(props) {
     return (
         <table>
-            <tr className='table-head'>
-                {props.headers.map(item => (
-                    <th>{item}</th>
-                ))}
-            </tr>
-            {props.children}
+            <thead>
+                <tr className='table-head'>
+                    {props.headers.map(item => (
+                        <th key={Math.random()}>{item}</th>
+                    ))}
+                </tr>
+            </thead>
+            <tbody>
+                {props.children}
+            </tbody>
+
         </table>
     )
 }
@@ -124,7 +130,7 @@ export function TableRow(props) {
         <Fragment>
             <tr className='table-row'>
                 {props.values.map(item => (
-                    <td>{item}</td>
+                    <td key={Math.random()}>{item}</td>
                 ))}
             </tr>
         </Fragment>
@@ -153,4 +159,29 @@ export function FooterBottom(props) {
             {props.content}
         </div>
     )
+}
+
+
+export function Modal(props) {
+    if (!props.name) {
+        console.error(`Tag "name" is required to modal work correctly`);
+        return (<Fragment></Fragment>)
+    } else {
+        return (
+            <Fragment>
+                <a className={`modal-btn`} href={`#${props.name}`}>{props.text}</a>
+
+                <div id={props.name} className="overlay">
+                    <div className="modal">
+                        <h2>{props.title}</h2>
+                        <a className="close" href="#">×</a>
+                        <div className="content">
+                            {props.content}
+                        </div>
+                    </div>
+                </div>
+            </Fragment>
+        )
+    }
+
 }

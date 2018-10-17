@@ -14,8 +14,8 @@ body {
 :root {
     --primary-color: rgb(7, 71, 166);
     --primary-color-variant: rgb(17, 91, 166);
-    --danger-color: red;
-    --warning-color: orange;
+    --danger-color: rgb(222, 53, 11);
+    --warning-color: rgb(255, 171, 0);
     --default-color: silver;
 }
 
@@ -27,6 +27,7 @@ body {
 
 a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 .content {

@@ -22,6 +22,10 @@
     border: 2px solid var(--primary-color);
 }
 
+.card:active {
+    opacity: 0.8;
+}
+
 .card-image img {
     display: block;
     margin-left: auto;
