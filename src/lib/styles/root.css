@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto';
+    margin: 0 auto;
+}
+
+* {
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+:root {
+    --primary-color: rgb(7, 71, 166);
+    --danger-color: red;
+    --warning-color: orange;
+    --default-color: silver;
+}
