@@ -1,5 +1,4 @@
 input, textarea, select {
-    margin: 3px;
     -moz-box-align: center;
     align-items: center;
     background-color: rgb(250, 251, 252);
@@ -11,25 +10,31 @@ input, textarea, select {
     -moz-box-pack: justify;
     justify-content: space-between;
     line-height: 2;
+    overflow: hidden;
     width: 300px;
     max-width: 100%;
-    overflow: hidden;
     transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
     overflow-wrap: break-word;
     border-width: 2px;
-    padding: 6px;
 }
 
-input:focus {
+input, select {
+    height: 34px;
+}
+
+input:focus, select:focus, textarea:focus {
     opacity: 1;
     border: 2px solid var(--primary-color);
 }
 
+
 @media (max-width: 576px) {}
 
 @media (max-width: 768px) {
-    input {
+    input, select, textarea {
         width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
     }
 }
 

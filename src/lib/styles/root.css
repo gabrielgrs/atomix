@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 body {
-    font-family: 'Roboto';
+    font-family: 'Inconsolata';
     margin: 0 auto;
 }
 
@@ -11,9 +10,26 @@ body {
     transition-duration: 0.4s;
 }
 
+.container {
+    margin: 2em; 
+}
+
 :root {
     --primary-color: rgb(7, 71, 166);
     --danger-color: red;
     --warning-color: orange;
     --default-color: silver;
 }
+
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 768px) { 
+    .container {
+        margin: 1em; 
+    }
+}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 1200px) {}
