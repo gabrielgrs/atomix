@@ -14,8 +14,13 @@ body {
     margin: 2em; 
 }
 
+a {
+    cursor: pointer;
+}
+
 :root {
     --primary-color: rgb(7, 71, 166);
+    --primary-color-variant: rgb(17, 91, 166);
     --danger-color: red;
     --warning-color: orange;
     --default-color: silver;

@@ -7,11 +7,9 @@
 * Card
 * Textarea
 * Select
-
+* Table
+* Footer
 
 ## Next Features
-* Table
 * Icon
-* Footer
 * Pagination
-

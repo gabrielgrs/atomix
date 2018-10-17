@@ -3,6 +3,8 @@ import './styles/navbar.css';
 import './styles/button.css';
 import './styles/input.css';
 import './styles/card.css';
+import './styles/table.css';
+import './styles/footer.css';
 
 import React, { Fragment } from 'react';
 
@@ -41,7 +43,10 @@ export function Textarea(props) {
 export function Navbar(props) {
     return (
         <div className="navbar">
-            <img className='navbar-icon' href={props.link || '/'} src={props.icon} />
+            <a><img className='navbar-icon' href={props.link || '/'} src={props.icon} /></a>
+            <a className='navbar-brand'>
+                {props.brand}
+            </a>
             <div className="navbar-right">
                 {props.children}
             </div>
@@ -55,6 +60,7 @@ export function NavItem(props) {
             href={props.link || '/'}
             target={props.blankTarget ? '_BLANK' : ''}
             onClick={props.onClick}
+            className='navbar-link'
         >
             {props.text}
         </a>
@@ -95,6 +101,56 @@ export function Card(props) {
             <div className='card-footer'>
                 {props.footer}
             </div>
+        </div>
+    )
+}
+
+export function Table(props) {
+    return (
+        <table>
+            <tr className='table-head'>
+                {props.headers.map(item => (
+                    <th>{item}</th>
+                ))}
+            </tr>
+            {props.children}
+        </table>
+    )
+}
+
+
+export function TableRow(props) {
+    return (
+        <Fragment>
+            <tr className='table-row'>
+                {props.values.map(item => (
+                    <td>{item}</td>
+                ))}
+            </tr>
+        </Fragment>
+    )
+}
+
+export function Footer(props) {
+    return (
+        <div className='footer'>
+            <div className='footer-top'>
+                <div>
+                    {props.firstContent}
+                </div>
+                <div>
+                    {props.secondContent}
+                </div>
+            </div>
+            {props.children}
+        </div>
+    )
+}
+
+export function FooterBottom(props) {
+    return (
+        <div className='footer-bottom'>
+            {props.content}
         </div>
     )
 }

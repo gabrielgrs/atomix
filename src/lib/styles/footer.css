@@ -1,0 +1,31 @@
+.footer {
+    background-color: var(--primary-color-variant);
+    color: white;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-top div {
+    margin: 50px;
+}
+
+.footer-bottom {
+    background-color: var(--primary-color);
+    padding: 10px;
+    color: white;
+}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 1200px) {}

@@ -27,6 +27,12 @@ input:focus, select:focus, textarea:focus {
     border: 2px solid var(--primary-color);
 }
 
+select {
+    /* Remove Arrow  */
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
+}
+
 
 @media (max-width: 576px) {}
 

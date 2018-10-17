@@ -1,0 +1,45 @@
+table {
+    width: 100%;
+    background-color: rgb(250, 251, 252);
+    border-color: rgb(238, 238, 238);
+    border-radius: 3px;
+    border-style: solid;
+    box-sizing: border-box;
+    color: rgb(9, 30, 66);
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    line-height: 2;
+    overflow: hidden;
+    transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+    overflow-wrap: break-word;
+    border-width: 2px;
+    padding: 3px;
+}
+
+th {
+    border-bottom: silver solid 2px;
+}
+
+.table-row {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.table-row:hover {
+    background-color: rgb(212, 212, 212);
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 768px) {
+    table {
+        margin-left: 0px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 1200px) {}
