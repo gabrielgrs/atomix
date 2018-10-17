@@ -9,7 +9,8 @@
     justify-content: space-between;
     line-height: 2;
     overflow: hidden;
-    width: 300px;
+    width: 33%;
+    margin: 0 auto;
     max-width: 100%;
     transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
     overflow-wrap: break-word;
@@ -58,12 +59,18 @@
 
 @media screen and (max-width: 768px) {
     .card {
-        width: 100%;
+        width: 100% !important;
         margin-left: 0px;
         margin-top: 10px;
     }
 }
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    .card {
+        width: 50%;
+    }
+}
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+
+}

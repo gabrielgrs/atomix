@@ -10,13 +10,6 @@ body {
     transition-duration: 0.4s;
 }
 
-.container {
-    margin: 2em; 
-}
-
-a {
-    cursor: pointer;
-}
 
 :root {
     --primary-color: rgb(7, 71, 166);
@@ -26,6 +19,28 @@ a {
     --default-color: silver;
 }
 
+
+
+.container {
+    margin: 2em; 
+}
+
+a {
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.horizontal-content {
+    flex-direction: row;
+}
+
+.vertical-content {
+    flex-direction: column;
+}
 
 @media screen and (max-width: 576px) {}
 

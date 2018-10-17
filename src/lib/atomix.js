@@ -24,7 +24,7 @@ export function Input(props) {
     return (
         <input
             type={`${props.type || 'text'}`}
-            className=''
+            placeholder={props.placeholder}
         />
     )
 }
@@ -33,7 +33,7 @@ export function Textarea(props) {
     return (
         <textarea
             type={`${props.type || 'text'}`}
-            className=''
+            placeholder={props.placeholder}
         >
         </textarea>
     )

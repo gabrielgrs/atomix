@@ -1,26 +1,40 @@
 import React from 'react';
 
-import { Input, Textarea, Button, Navbar, NavItem, Select, SelectOption, Card, Table, TableRow, Footer, FooterBottom, } from '../src/lib/atomix';
+import {
+    Input, Textarea, Button,
+    Navbar, NavItem, Select,
+    SelectOption, Card, Table,
+    TableRow, Footer, FooterBottom,
+} from '../src/lib/atomix';
 
 export default props => {
 
     return (
         <div>
-            <Navbar brand='Atomix' icon='https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/firefox/files/2017/12/firefox-logo-300x310.png'>
+            <Navbar brand='Atomix' icon='https://static1.squarespace.com/static/54e4ede1e4b012fa4a38638c/t/5b96a82a0e2e72baf585cc78/1536600122199/Atom.png'>
                 <NavItem link='http://www.facebook.com' blankTarget={true} text='Facebook' />
-                <NavItem link='http//www.linkedin.com' blankTarget={true} text='Linkedin' />
+                <NavItem link='http://www.linkedin.com' blankTarget={true} text='Linkedin' />
                 <NavItem link='http://www.github.com' blankTarget={true} text='github' />
             </Navbar>
 
 
             <div className='container'>
 
-                <Input
-                    type='password'
-                    style='primary'
-                    placeholder='Placeholder'
-                    value='Value'
-                />
+                <div className='vertical-content'>
+                    <Input
+                        type='password'
+                        style='primary'
+                        placeholder='Placeholder'
+                        value='Value'
+                    />
+
+                    <Input
+                        type='number'
+                        style='primary'
+                        placeholder='Placeholder'
+                        value='Value'
+                    />
+                </div>
 
                 <Button style='primary' onClick={() => alert('Botão acionado com sucesso')} text='Teste' />
 
@@ -36,13 +50,58 @@ export default props => {
                     <SelectOption value='Valor' text='Texto' />
                 </Select>
 
-                <Card
-                    img='https://conteudo.imguol.com.br/c/entretenimento/c4/2018/05/15/super-mario-odyssey-1526426783086_v2_1170x540.jpgx'
-                    title='Título'
-                    subtitle='Subtitle'
-                    content='Eu sou um content, estou sendo testado. Eu sou um content, estou sendo testado. Eu sou um content, estou sendo testado. '
-                    footer='Meu footer'
-                />
+                <div className='content horizontal-content'>
+                    <Card
+                        img='https://conteudo.imguol.com.br/c/entretenimento/c4/2018/05/15/super-mario-odyssey-1526426783086_v2_1170x540.jpgx'
+                        title='Título'
+                        subtitle='Subtitle'
+                        content='Eu sou um content, estou sendo testado. Eu sou um content, estou sendo testado. Eu sou um content, estou sendo testado. '
+                        footer='Meu footer'
+                    />
+                    <Card
+                        img='https://conteudo.imguol.com.br/c/entretenimento/c4/2018/05/15/super-mario-odyssey-1526426783086_v2_1170x540.jpgx'
+                        title='Título'
+                        subtitle='Subtitle'
+                        content='Eu sou um content, estou sendo testado. Eu sou um content, estou sendo testado. Eu sou um content, estou sendo testado. '
+                        footer='Meu footer'
+                    />
+                    <Card
+                        img='https://conteudo.imguol.com.br/c/entretenimento/c4/2018/05/15/super-mario-odyssey-1526426783086_v2_1170x540.jpgx'
+                        title='Título'
+                        subtitle='Subtitle'
+                        content='Eu sou um content, estou sendo testado. Eu sou um content, estou sendo testado. Eu sou um content, estou sendo testado. '
+                        footer='Meu footer'
+                    />
+                    <Card
+                        img='https://conteudo.imguol.com.br/c/entretenimento/c4/2018/05/15/super-mario-odyssey-1526426783086_v2_1170x540.jpgx'
+                        title='Título'
+                        subtitle='Subtitle'
+                        content='Eu sou um content, estou sendo testado. Eu sou um content, estou sendo testado. Eu sou um content, estou sendo testado. '
+                        footer='Meu footer'
+                    />
+                    <Card
+                        img='https://conteudo.imguol.com.br/c/entretenimento/c4/2018/05/15/super-mario-odyssey-1526426783086_v2_1170x540.jpgx'
+                        title='Título'
+                        subtitle='Subtitle'
+                        content='Eu sou um content, estou sendo testado. Eu sou um content, estou sendo testado. Eu sou um content, estou sendo testado. '
+                        footer='Meu footer'
+                    />
+                    <Card
+                        img='https://conteudo.imguol.com.br/c/entretenimento/c4/2018/05/15/super-mario-odyssey-1526426783086_v2_1170x540.jpgx'
+                        title='Título'
+                        subtitle='Subtitle'
+                        content='Eu sou um content, estou sendo testado. Eu sou um content, estou sendo testado. Eu sou um content, estou sendo testado. '
+                        footer='Meu footer'
+                    />
+                    <Card
+                        img='https://conteudo.imguol.com.br/c/entretenimento/c4/2018/05/15/super-mario-odyssey-1526426783086_v2_1170x540.jpgx'
+                        title='Título'
+                        subtitle='Subtitle'
+                        content='Eu sou um content, estou sendo testado. Eu sou um content, estou sendo testado. Eu sou um content, estou sendo testado. '
+                        footer='Meu footer'
+                    />
+                </div>
+
 
                 <Table headers={['FirstName', 'Second Name', 'Third Name', 'Random', 'Food',]}>
                     <TableRow values={['Polenta', 'com', 'ceva', 'mais', 'tarde?']} />
