@@ -1,8 +1,8 @@
 {
-  "name": "atomix",
+  "name": "atomix-ui",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/lib/atomix.js",
   "scripts": {
     "dev": "webpack-dev-server --progress --colors --inline --hot",
     "production": "webpack --progress -p"
@@ -14,6 +14,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "version": "0.0.1",
   "bugs": {
     "url": "https://github.com/gabrielgrs/atomix/issues"
   },
