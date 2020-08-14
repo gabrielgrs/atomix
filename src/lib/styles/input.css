@@ -1,81 +1,89 @@
-input, textarea, select {
-    -moz-box-align: center;
-    align-items: center;
-    background-color: rgb(250, 251, 252);
-    border-color: rgb(238, 238, 238);
-    border-radius: 3px;
-    border-style: solid;
-    box-sizing: border-box;
-    color: rgb(9, 30, 66);
-    -moz-box-pack: justify;
-    justify-content: space-between;
-    line-height: 2;
-    overflow: hidden;
-    width: 33%;
-    max-width: 100%;
-    transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
-    overflow-wrap: break-word;
-    border-width: 2px;
-    
-    margin: 5px 5px 5px 5px;
+input,
+textarea,
+select {
+  -moz-box-align: center;
+  align-items: center;
+  background-color: rgb(250, 251, 252);
+  border-color: rgb(238, 238, 238);
+  border-radius: 3px;
+  border-style: solid;
+  box-sizing: border-box;
+  color: rgb(9, 30, 66);
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  line-height: 2;
+  overflow: hidden;
+  width: 33%;
+  max-width: 100%;
+  transition: background-color 0.2s ease-in-out 0s,
+    border-color 0.2s ease-in-out 0s;
+  overflow-wrap: break-word;
+  border-width: 2px;
+
+  margin: 5px 5px 5px 5px;
 }
 
-input, select {
-    height: 34px;
+input,
+select {
+  height: 34px;
 }
 
-input:focus, select:focus, textarea:focus {
-    opacity: 1;
-    border: 2px solid var(--primary-color);
+input:focus,
+select:focus,
+textarea:focus {
+  opacity: 1;
+  border: 2px solid var(--primary-color);
 }
 
 select {
-    /* Remove Arrow  */
-    /* -webkit-appearance: none;
+  /* Remove Arrow  */
+  /* -webkit-appearance: none;
     -moz-appearance: none; */
 }
 
-input[type=radio] {
-    padding-left:5px;
-    padding-right:5px;
-    border-radius:15px;
+input[type='radio'] {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 15px;
 
-    -webkit-appearance:button;
+  -webkit-appearance: button;
 
-    border: double 2px #00F;
+  border: double 2px #00f;
 
-    background-color:#0b0095;
-    color:#FFF;
-    white-space: nowrap;
-    overflow:hidden;
+  background-color: #0b0095;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
 
-    width:15px;
-    height:15px;
+  width: 15px;
+  height: 15px;
 }
 
-input[type=radio]:checked {
-    background-color:#000;
-    border-left-color:#06F;
-    border-right-color:#06F;
+input[type='radio']:checked {
+  background-color: #000;
+  border-left-color: #06f;
+  border-right-color: #06f;
 }
 
-input[type=radio]:hover {
-    box-shadow:0px 0px 10px #1300ff;
+input[type='radio']:hover {
+  box-shadow: 0px 0px 10px #1300ff;
 }
 
-
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+}
 
 @media (max-width: 768px) {
-    input, select, textarea {
-        width: 100%;
-        margin-left: 0px;
-        margin-top: 10px;
-    }
+  input,
+  select,
+  textarea {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
 }
-
 
 @media (max-width: 992px) {
 }
 
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+}

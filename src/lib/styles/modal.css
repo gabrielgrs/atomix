@@ -1,81 +1,80 @@
-
-
 .modal-btn {
-    background-color: transparent;
-    color: var(--primary-color);
-    border-radius: 3px;
-    font-size: 20px;
-    margin: 5px 5px 5px 5px;
+  background-color: transparent;
+  color: var(--primary-color);
+  border-radius: 3px;
+  font-size: 20px;
+  margin: 5px 5px 5px 5px;
 }
 
 .modal-btn:hover {
-    font-weight: 600;
-    opacity: 0.8;
+  font-weight: 600;
+  opacity: 0.8;
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .overlay:target {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal {
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 3px;
-    width: 50%;
-    position: relative;
-    transition: all 0.4s ease-in-out;
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 3px;
+  width: 50%;
+  position: relative;
+  transition: all 0.4s ease-in-out;
 }
 
 .modal h2 {
-    margin-top: 0;
-    color: #333;
-    font-family: Tahoma, Arial, sans-serif;
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
 }
 
 .modal .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    text-decoration: none;
-    color: #333;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  text-decoration: none;
+  color: #333;
 }
 
 .modal .close:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .modal .content {
-    max-height: 30%;
-    overflow: auto;
-    padding: 30px;
+  max-height: 30%;
+  overflow: auto;
+  padding: 30px;
 }
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+}
 
 @media screen and (max-width: 768px) {
-    .modal {
-        width: 80%;
-    }
+  .modal {
+    width: 80%;
+  }
 }
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+}
 
-@media screen and (max-width: 1200px) {}
-
-
+@media screen and (max-width: 1200px) {
+}
